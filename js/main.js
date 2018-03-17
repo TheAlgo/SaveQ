@@ -1,11 +1,11 @@
 $(function () {
 	$(".typed").typed({
 		strings: [
-			"SHARED AN ART ?",
-			"A PRODUCT OF IMPORTANCE",
-			"PIRATED ?",
-			"NEED CREDIBILITY ?",
-			"WE HAVE YOUR BACK.^1000 OPENART"
+			"Got PetaBytes of Memory ?",
+			"Need Instant Search and Encryption",
+			"GODSPEED ..!!! ",
+			" Welcome to the World of No-Bits",
+			"WE TALK QUANTUM"
 		],
 		stringsElement: null,
 		typeSpeed: 30,
