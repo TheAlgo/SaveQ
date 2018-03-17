@@ -1,0 +1,26 @@
+version: "3"
+services:
+  ipfs:
+    build: 
+      context: .
+      dockerfile: ipfs.Dockerfile
+    ports:
+      - 4001:4001
+      - 8080:8080
+      - 5001:5001
+    # network_mode: host
+    volumes: 
+      - /data/ipfs:/data/ipfs
+
+  testrpc:
+    image: trufflesuite/ganache-cli
+    # entrypoint: node ./build/cli.node.js --unlock 
+    ports: 
+      - 8545:8545
+
+  app:
+    build: .
+    ports:
+      - 80:3000
+    volumes: 
+      - .:/usr/src/app
